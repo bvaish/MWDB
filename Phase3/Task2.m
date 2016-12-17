@@ -12,7 +12,7 @@ layers = 3; k = 12;
 
 disp(sprintf('\nReading Input Matrix.............'));
 disp(datestr(now));
-Matrix1 = dlmread('C:\Users\Joel\Desktop\ASU_Stuff\Sem1\MWD\Phase3\Phase3_output\filename_d.spc',',');
+Matrix1 = dlmread('C:\Users\vgodava1\Desktop\MWDB\Phase3\Phase3_output\filename_d.spc',',');
 length=size(Matrix1);
 dims=length(2);
 
@@ -846,7 +846,7 @@ Ultmat = sortrows(Ultmat,[1,2]);
 
 disp(sprintf('\nWriting Output to File Begins.................'));
 disp(datestr(now));
-dlmwrite('C:\Users\Joel\Desktop\ASU_Stuff\Sem1\MWD\Phase3\Phase3_output\filename_d_k.gspc',Ultmat);
+dlmwrite('C:\Users\vgodava1\Desktop\MWDB\Phase3\Phase3_output\filename_d_k.gspc',Ultmat);
 
 disp(sprintf('\nCode Execution completed'));
 disp(datestr(now));

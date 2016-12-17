@@ -6,7 +6,7 @@ dim = input('Enter Target Dimensionality:- ','s');
 
 disp(sprintf('\nReading Input Matrix.............'));
 disp(datestr(now));
-Matrix1 = dlmread('C:\Users\Joel\Desktop\ASU_Stuff\Sem1\MWD\Phase3\Phase1_output\filename.sift',','); 
+Matrix1 = dlmread('C:\Users\vgodava1\Desktop\MWDB\Phase3\Phase1_output\filename.sift',','); 
 disp(datestr(now));
 disp('Reading Matrix Completed');
 
@@ -14,7 +14,7 @@ disp('Reading Matrix Completed');
 %%%%%%%%%%%%%%%%%%                      Code to read from file ends here                           %%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-OutputPath = 'C:\Users\Joel\Desktop\ASU_Stuff\Sem1\MWD\Phase3\Phase3_output\';
+OutputPath = 'C:\Users\vgodava1\Desktop\MWDB\Phase3\Phase3_output\';
 
 OutputFile2 = 'filename_d2.spc';
 OutputPath2 = fullfile(OutputPath,OutputFile2);
@@ -71,6 +71,6 @@ disp('Writing <Index,Score> Matrix Completed');
 disp(sprintf('\nWriting Dim Reduced Matrix............'));
 disp(datestr(now));
 SiftPCAMatrix = horzcat(InfoMatrix,PCAMatrix);
-dlmwrite('C:\Users\Joel\Desktop\ASU_Stuff\Sem1\MWD\Phase3\Phase3_output\filename_d.spc',SiftPCAMatrix);
+dlmwrite('C:\Users\vgodava1\Desktop\MWDB\Phase3\Phase3_output\filename_d.spc',SiftPCAMatrix);
 disp(datestr(now));
 disp(sprintf('Writing Dim Reduced Matrix Completed'));
